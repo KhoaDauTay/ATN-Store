@@ -1,0 +1,43 @@
+{% extends "baseform.html" %} {% block content %}
+<!-- Main Content -->
+
+<div class="container z-depth-1 my-3 py-3">
+
+    <!-- Section -->
+    <section>
+
+        <style>
+            .border-top {
+                border-top-width: 2px !important;
+            }
+        </style>
+
+        <h2 class="font-weight-bold text-center grey-text text-uppercase small mb-4">Order Successly </h2>
+        <h1 class="font-weight-bold text-center dark-grey-text pb-2">Order Information</h1>
+        <hr class="w-header my-4">
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Name</a></h5>
+                <p class="text-muted mb-5 pb-md-3">{{your_name}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Phone</a></h5>
+                <p class="text-muted mb-5">{{your_phone}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Product ID</a></h5>
+                <p class="text-muted mb-5">{{your_idCard}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Product Name</a></h5>
+                <p class="text-muted mb-5">{{your_product}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Price</a></h5>
+                <p class="text-muted mb-5">{{your_price}}</p>
+            </div>
+
+        </div>
+        <div class="text-center text-md-left">
+            <a class="btn btn-primary" href="/">Go Home</a>
+        </div>
+        <div class="status"></div>
+    </section>
+    <!-- Section -->
+
+</div>
+<!-- //Main Content -->
+{% endblock content %}
