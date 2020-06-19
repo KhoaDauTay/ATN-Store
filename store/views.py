@@ -6,6 +6,8 @@ from django.db.models import Q
 
 def Home(request):
     return render(request, "home.html")
+def View(request):
+    return render(request, "view.html")
     
 def Booking(request):
     return render(request, 'FormBooking.html')
