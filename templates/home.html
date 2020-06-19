@@ -1,29 +1,137 @@
- {% extends "base.html" %} {% block content %}
-<div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <!--First slide-->
-        <div class="carousel-item active">
-            <div class="view" style="background-image: url('https://image.shutterstock.com/image-photo/team-female-male-doctors-nurses-600w-1688225587.jpg'); background-repeat: no-repeat; background-size: cover; ">
-                <!-- Mask & flexbox options-->
-                <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+{% extends "base.html" %} {% load static %} {% block content %}
 
-                    <!-- Content -->
-                    <div class="text-center white-text mx-5 wow fadeIn">
-                        <h1 class="mb-4">
-                            <strong>CHECK YOUR FOR ORDER</strong>
-                        </h1>
-
-                        <form action="/search" method="get" style="display : flex; justify-content:center ; align-items : center">
-                            <input style="width: 50% ; text-align:center ;justify-content:center;vertical-align:middle" name="q" class="form-control" id="anythingSearch" type="text" placeholder="Enter Product ID for search">
-                        </form>
-
+        <!-- start banner_section -->
+        <div class="banner_section d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="content">
+                            <h3 class="header">
+                                High Quality
+                            </h3>
+                            <div class="custom d-flex">
+                                <span></span>
+                            </div>
+                            <h2 class="title">
+                                ATN STORE
+                            </h2>
+                            <p class="describe">
+                                Effects of chronic use may include bronchitis, a cannabis dependence syndrome, and subtle impairments of attention and memory.
+                            </p>
+                        </div>
                     </div>
-                    <!-- Content -->
-
                 </div>
-                <!-- Mask & flexbox options-->
             </div>
         </div>
-    </div>
-</div>
+        <!-- end banner_section -->
+        <!-- start product_section -->
+        <div class="product_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 col-sm-12 mx-auto">
+                        <div class="contentTop">
+                            <h2 class="title text-align-center">
+                                Skaterborad
+                            </h2>
+                            <p class="describe text-align-center">
+                                Are you able to buy this product at ATN STORE
+                            </p>
+                            <div class="custom d-flex justify-content-center">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="content">
+                            <div class="pic_img">
+                                <img src="https://cf.shopee.vn/file/d0530cde3be33d0ab42efb4be1e9a5af" alt="">
+                                <div class="overlay d-flex align-items-center justify-content-center">
+                                    <a href="#" class="icon"><i class="fas fa-shopping-bag"></i></a>
+                                    <p>Add to cart</p>
+                                </div>
+                            </div>
+                            <div class="contentBottom">
+                                <div class="rate d-flex align-items-center justify-content-space-between">
+                                    <div class="price d-flex align-items-center">
+                                        <p class="pervious">£45.00</p>
+                                        <p class="now">£35.00</p>
+                                    </div>
+                                    <div class="icon d-flex align-items-center">
+                                        <a href="#" class="full"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                                        <a href="#" class="not_full"><i class="far fa-star"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="title">Critical Kush</h3>
+                                <div class="type">
+                                    <p class="describe">Type: <span>Sativa</span></p>
+                                    <p class="describe">Avg THC: <span>19%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="content">
+                            <div class="pic_img">
+                                <img src="https://vn-test-11.slatic.net/p/mdc/103a89cc021d7e3673d0628cff876d6b.jpg_720x720q80.jpg_.webp" alt="">
+                                <div class="overlay d-flex align-items-center justify-content-center">
+                                    <a href="#" class="icon"><i class="fas fa-shopping-bag"></i></a>
+                                    <p>Add to cart</p>
+                                </div>
+                            </div>
+                            <div class="contentBottom">
+                                <div class="rate d-flex align-items-center justify-content-space-between">
+                                    <div class="price d-flex align-items-center">
+                                        <p class="pervious">£45.00</p>
+                                        <p class="now">£35.00</p>
+                                    </div>
+                                    <div class="icon d-flex align-items-center">
+                                        <a href="#" class="full"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                                        <a href="#" class="not_full"><i class="far fa-star"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="title">Lemon Cream Diese</h3>
+                                <div class="type">
+                                    <p class="describe">Type: <span>Indica</span></p>
+                                    <p class="describe">Avg THC: <span>17.5%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                        <div class="content">
+                            <div class="pic_img">
+                                <img src="https://cuocsongnangdong.vn/wp-content/uploads/2016/08/giay-patin-nguoi-lon-b3-trang.jpg" alt="">
+                               	
+                            </div>
+                            <div class="contentBottom">
+                                <div class="rate d-flex align-items-center justify-content-space-between">
+                                    <div class="price d-flex align-items-center">
+                                        <p class="pervious">£45.00</p>
+                                        <p class="now">£35.00</p>
+                                    </div>
+                                    <div class="icon d-flex align-items-center">
+                                        <a href="#" class="full"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+                                        <a href="#" class="not_full"><i class="far fa-star"></i></a>
+                                    </div>
+                                </div>
+                                <h3 class="title">Elphabas Bliss</h3>
+                                <div class="type">
+                                    <p class="describe">Type: <span>Hybrid</span></p>
+                                    <p class="describe">Avg THC: <span>10.5%</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button text-align-center">
+                    <a href="/booking">INSERT<i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+                <div class="button-1 text-align-center">
+                    <a href="/view">VIEW<i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- end product_section -->
 {% endblock content %}
